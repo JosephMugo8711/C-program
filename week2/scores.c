@@ -1,11 +1,37 @@
 #include <stdio.h>
 
+// Constant 
+const int N = 3;
+
+// Prototype
+// Compute the average
+float average(int length, int array[]);
+
 int main(void)
 {
-    int score1 = 72;
-    int score2 = 73;
-    int score3 = 33;
+    // Get scores
+    int scores[N];
+    for (int i = 0; i < N; i++)
+    {
+        printf("Score: ");
+        scanf("%d", &scores[i]);
+    }
 
+    // Print average
+    printf("Average: %f\n", average(N, scores));
 
-    printf("Average: %f\n", (score1 + score2 + score3)  / 3.0);
+    return 0;
+}
+
+// Function to calculate average
+float average(int length, int array[])
+{
+    
+    int sum = 0;
+    for (int i = 0; i < length; i++)
+    {
+        sum += array[i];
+    }
+
+    return (float)sum / length;
 }
