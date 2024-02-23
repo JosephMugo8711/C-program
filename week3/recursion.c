@@ -10,6 +10,7 @@ int main(void)
     draw(height);
 }
 
+
 void draw(int n)
 {
     // If nothing to draw
