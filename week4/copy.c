@@ -7,13 +7,23 @@
 int main(void)
 {
     char *s = get_string("s: ");
+    if (s == NULL)
+    {
+        return 1;
+    }
 
     char *t = malloc(strlen(s) + 1);
 
-    for (int i = 0, n = strlen(s); i <= n; i++)
+    if (t == NULL)
     {
-        t[i] = s[i];
+        return 1;
     }
+
+    // for (int i = 0, n = strlen(s); i <= n; i++)
+    // {
+    //     t[i] = s[i];
+    // }
+    strcpy(t, s);
 
     if (strlen(t) > 0)
     {
