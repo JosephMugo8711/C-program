@@ -188,7 +188,7 @@ int logarithmic_example(int array[], int size, int target) {
             right = middle - 1;
         }
     }
-    return -1; // Target not found
+    return -1; // Target is not found
 }
 
 // Example function with constant time complexity (O(1))
