@@ -1,6 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+
+
 typedef struct node 
 {
     int number;         // Data part of the node, an integer
